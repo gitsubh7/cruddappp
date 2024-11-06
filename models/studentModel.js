@@ -5,7 +5,7 @@ const studentSchema=new Schema({
         required:true
     },
     rollNumber:{
-        type:String,
+        type:Number,
         required:true,
         unique:true
     },

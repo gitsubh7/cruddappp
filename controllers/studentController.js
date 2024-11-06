@@ -70,7 +70,7 @@ export const deleteStudent = async (req, res) => {
 
 export const updateStudent = async (req, res) => {
     try {
-        const rollNumber = String(req.params.rollNumber);  // Convert to string
+        const rollNumber = req.params.rollNumber; 
         const student = await Student.findOneAndUpdate(
             { rollNumber },
             { $set: req.body },

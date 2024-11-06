@@ -7,7 +7,7 @@ const router=express.Router();
 router.route("/create").post(createStudent);
 router.route("/fetch").get(fetchStudents);
 router.route("/fetchs/:rollNumber").get(fetchStudentById);
-router.route("/update").put(updateStudent);
+router.route("/update/:rollNumber").put(updateStudent);
 router.route("/delete/:rollNumber").delete(deleteStudent);
 
 
